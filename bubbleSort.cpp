@@ -4,9 +4,14 @@ using namespace std;
 
 int main ()
 {
-  int tab[10] = { 1, 5, 3, 6, 8, 2, 7, 9, 4 };
+  int tab[10] = {1, 5, 3, 6, 8, 2, 7, 9, 4, 10};
   int buf;
   bool flag = false;
+  for (int i = 0; i < sizeof (tab) / sizeof (int); i++)
+    {
+      cout << tab[i] << " ";
+    }
+    cout<<"\n";
   do
     {
       flag = false;
